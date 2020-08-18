@@ -8,13 +8,14 @@ This tool was created for [@jameshi16](https://github.com/jameshi16) to have fun
 
 # Setting up
 
-Create a virtual environment, clone the repository, install all the pip packages in `requirements.txt`, run `config.py`, then run `main.py`.
+Create a virtual environment, clone the repository, install `sox` and `libsox-fmt-mp3`, install all the pip packages in `requirements.txt`, run `config.py`, then run `main.py`.
 
 ```bash
 virtualenv -p python3 ~/.environments/typesound
 source ~/.environments/typesound/bin/activate
 git clone https://github.com/jameshi16/TypeSound.git
 cd TypeSound
+sudo apt-get install -y sox libsox-fmt-mp3
 pip install -r requirements.txt
 ./config.py
 ./main.py
