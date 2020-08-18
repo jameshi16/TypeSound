@@ -15,13 +15,17 @@ class XKeyboard(IBaseKeyboard):
         increase_rate=0.01,
         decay_rate=0.1,
         cap_kps=9,
-        display_instance=display.Display()
+        display_instance=None
     ):
         super().__init__(
             increase_rate=increase_rate,
             decay_rate=decay_rate,
             cap_kps=cap_kps
         )
+
+        if display_instance is None:
+            display_instance = display.Display()
+
         self.local_dpy = display_instance
         self.record_dpy = display_instance
         self._keyboard_thread = None

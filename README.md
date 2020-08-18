@@ -1,5 +1,7 @@
 # TypeSound
 
+![TypeSound CI](https://github.com/jameshi16/TypeSound/workflows/TypeSound%20CI/badge.svg)
+
 Type or your music stops :knife:.
 
 This tool was created for [@jameshi16](https://github.com/jameshi16) to have fun and mess around with simple audio manipulation, unit testing and GitHub actions. Also he needed [blog](https://codingindex.xyz) content.
